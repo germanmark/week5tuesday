@@ -1,0 +1,22 @@
+@import "variables";
+
+@keyframes myCoolAnimation {
+    0% {
+        width: $logo-init-width;
+    }
+    25% {
+        width: 50px;
+    }
+
+    50%{
+        width: 4*$logo-init-width;
+    }
+
+    75% {
+        width: 20px;
+    }
+
+    100%{
+        width: $logo-init-width;
+    }
+}

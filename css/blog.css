@@ -1,0 +1,78 @@
+@-webkit-keyframes myCoolAnimation {
+  0% {
+    width: 100px;
+  }
+  25% {
+    width: 50px;
+  }
+  50% {
+    width: 400px;
+  }
+  75% {
+    width: 20px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+@keyframes myCoolAnimation {
+  0% {
+    width: 100px;
+  }
+  25% {
+    width: 50px;
+  }
+  50% {
+    width: 400px;
+  }
+  75% {
+    width: 20px;
+  }
+  100% {
+    width: 100px;
+  }
+}
+header {
+  display: grid;
+  justify-items: center;
+}
+header > img {
+  height: 10vh;
+}
+header > img:hover {
+  -webkit-animation: myCoolAnimation 2s ease-in-out infinite;
+          animation: myCoolAnimation 2s ease-in-out infinite;
+}
+header > a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: red;
+  background-color: floralwhite;
+  transition: font-size 0.25s linear;
+}
+header > a:hover {
+  font-size: 2em;
+}
+header > h1 {
+  color: rgb(150, 50, 255);
+}
+header > h1:hover {
+  color: rgb(225, 50, 255);
+}
+
+footer {
+  display: grid;
+  justify-items: center;
+}
+footer img {
+  height: 75px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: bisque;
+}/*# sourceMappingURL=blog.css.map */

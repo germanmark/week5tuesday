@@ -1,0 +1,28 @@
+@import "variables";
+
+header{
+    display: grid;
+    justify-items: center;
+    >img{
+        height: 10vh;
+        &:hover{
+            animation: myCoolAnimation 2s ease-in-out infinite;
+        }
+    }
+    >a{
+        font-size: 1.5em;
+        text-decoration: none;
+        color: $link-color;
+        background-color: floralwhite;
+        transition: font-size 0.25s linear;
+        &:hover{
+            font-size: 2em;
+        }
+    }
+    >h1{
+        color: rgb($example-r, $example-g, $example-b);
+        &:hover{
+            color: rgb(1.5*$example-r, $example-g, $example-b)
+        }
+    }
+}
