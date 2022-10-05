@@ -1,3 +1,24 @@
+@keyframes myCoolAnimation {
+    0% {
+        width: 100px;
+    }
+    25% {
+        width: 20px;
+    }
+
+    50%{
+        width: 400px;
+    }
+
+    75% {
+        width: 20px;
+    }
+
+    100%{
+        width: 100px;
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,16 +34,36 @@ header{
 }
 header > img{
     height: 10vh;
+    
+}
+
+header > img:hover{
+    animation: myCoolAnimation 2s ease-in-out infinite;
 }
 header > a {
     font-size: 1.5em;
     text-decoration: none;
     color: gray;
+    background-color: floralwhite;
+    transition: font-size 0.25s linear;
+}
+
+header > a:hover{
+    font-size: 2em;
 }
 
 main{
     display: grid;
     justify-items: center;
+}
+
+main > h1{
+    color: black;
+    transition: color 1s ease-in-out;
+}
+
+main > h1:active{
+    color : orange;
 }
 
 main > p {
